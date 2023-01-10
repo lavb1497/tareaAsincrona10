@@ -1,0 +1,22 @@
+<div class="container">
+  <div class="row">
+    <div class="col col-sm-6">
+      <div class="card">
+        <div class="card-body">
+          <input class="form-control" type="text" placeholder="Ingresa nombre de tarea" aria-label="default input example" [(ngModel)]="newNombre">
+          <textarea class="form-control mt-3 mb-3" placeholder="Ingresar descripción" id="exampleFormControlTextarea1" [(ngModel)]="newTarea" rows="3"></textarea>
+          <div class="text-center">
+            <button type="button" class="btn btn-primary" (click)="agregarNombre()">Agregar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col col-sm-6">
+      <div class="card">
+        <div class="card-body">
+          <app-body2 [nombre]="nombres"></app-body2>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
